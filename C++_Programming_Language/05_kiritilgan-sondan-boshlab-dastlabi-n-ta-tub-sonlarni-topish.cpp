@@ -8,9 +8,9 @@ using namespace std;
 
 int main () {
 
-    int number = -1;     // start
+    	int number = -1;     // start
 	int limit = 15;      // limit
-    int counter = 0;     // count
+    	int counter = 0;     // count
 	bool idf;
 
 	if (limit <= 0) {
