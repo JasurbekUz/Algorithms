@@ -1,6 +1,7 @@
-// Sana: 2021 11 07
+// Sana: 11 07 2021
 // Dasturchi: Jasurbek Shamsitdinov
 // Maqsad: kiritilgan son tub yoki tub emasligini aniqlash
+//
 
 #include <iostream>
 
@@ -21,6 +22,7 @@ int main() {
 		if (number % i == 0) {
 
 			idf = false;
+
 			break;
 		}
 	}
@@ -28,6 +30,7 @@ int main() {
 	if (idf) {
 
 		printf("number %d is prime", number);
+
 		return 0;
 	}
 
