@@ -1,4 +1,4 @@
-// Sana: 2021 11 7
+// Sana: 2021 11 07
 // Dasturchi: Jasurbek Shamsitdinov
 // Maqsad: kiritilgan son tub yoki tub emasligini aniqlash
 
