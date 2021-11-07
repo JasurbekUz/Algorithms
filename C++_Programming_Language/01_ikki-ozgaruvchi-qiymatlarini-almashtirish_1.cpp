@@ -17,6 +17,4 @@ int main() {
 	a = a - b;
 
 	cout << a << ", " << b;
-
-	
 }

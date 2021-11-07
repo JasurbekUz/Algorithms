@@ -17,7 +17,5 @@ int main() {
 	a = b;
 	b = c;
 
-	cout << a << ", " << b;
-
-	
+	cout << a << ", " << b;	
 }

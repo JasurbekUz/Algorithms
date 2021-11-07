@@ -1,7 +1,6 @@
 // Sana: 11 07 2021
 // Dasturchi: Jasurbek Shamsitdinov
 // Maqsad: kiritilgan son tub yoki tub emasligini aniqlash
-//
 
 #include <iostream>
 
@@ -35,4 +34,6 @@ int main() {
 	}
 
 	printf("number %d is not prime", number);
+
+	return 0;
 }
