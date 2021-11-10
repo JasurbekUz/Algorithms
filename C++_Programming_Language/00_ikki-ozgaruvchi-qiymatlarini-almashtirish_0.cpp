@@ -1,4 +1,4 @@
-// Sana: 11 07 2021
+// Sana: 11 07 2021 /m d y
 // Dasturchi: Jasurbek Shamsitdinov
 // Maqsad: e'on qilingan ikki o'zgaruvhilarning qiymatlarini almashtirish 1-usul
 
