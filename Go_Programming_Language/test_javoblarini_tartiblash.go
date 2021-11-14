@@ -10,14 +10,25 @@ import (
 	"strconv"
 )
 
-const answers = "1a2a3b4c5a6c7d8a9c10d11b12b13c14d15a16b17a18a19b20a21b22a23a24b25c26a27a28b29c30d"
+const str = "1a2a3b4c5a6c2  4b25c26a2  7a28b2  9c30d14d15a16b17a18a19b20a21b7d8a9c10d11b12b13c23a22a"
 
 func main () {
 
 	var (
 
 		index uint8 = 0
+		answers string
 	)
+
+	for _, byts := range str {
+
+		if string(byts) == " "  {
+
+			continue
+		}
+
+		answers += string(byts)
+	}
 
 	var answersTable = make(map[uint8]string, 30)
 
@@ -37,21 +48,21 @@ func main () {
 
 				if answers[index + 1] > 58 {
 
+					index++
+
 					orderInt, _ := strconv.Atoi(order)
 
-					answersTable[uint8(orderInt)] = string(answers[index+1])
-
-					index++
+					answersTable[uint8(orderInt)] = string(answers[index])
+					
 				}
 
 			} else {
 
-				orderInt, _ := strconv.Atoi(order)
-
-				answersTable[uint8(orderInt)] = string(answers[index+1])
-
 				index++
 
+				orderInt, _ := strconv.Atoi(order)
+
+				answersTable[uint8(orderInt)] = string(answers[index])
 			}
 		} 
 
@@ -59,5 +70,4 @@ func main () {
 	}
 
 	fmt.Println(answersTable)
-
 }
